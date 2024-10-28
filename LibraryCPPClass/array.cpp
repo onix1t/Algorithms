@@ -45,7 +45,7 @@ Data Array::get(size_t index) const
 void Array::set(size_t index, Data value)
 {
     if(index >= arrSize){
-        throw out_of_range("Index out of bounds");
+        throw out_of_range("Index out of bounds\n");
     }
     arrData[index] = value; 
 }
